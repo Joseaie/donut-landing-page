@@ -117,7 +117,7 @@ p, .nav-link, .form-field, .button, .error-message {
     -webkit-transform: rotate(180deg);
 }
 
-span {
+#hero-text {
     display: none;
     position: absolute;
     z-index: 2;
@@ -297,8 +297,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1000px) {
-    span {
+    #hero-text {
         display: block;
     }
 }
