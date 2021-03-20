@@ -35,17 +35,16 @@
 
     <!-- Hero -->
     <section id="hero">
-        <img id="donut-hero" src="assets/assort-donut.jpg" alt="an assortment of doughnuts.">
-        <a href="#plans"><span>Deuo<br> or<br> Deuo</span></a>
+        <a href="#plans"><span id="hero-text">Deuo<br> or<br> Deuo</span></a>
     </section>
 
     <!-- About -->
     <section id="donut-advert">
         <div>
-        <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/UCDn7Itk7Io?controls=0&amp;start=50"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+            <iframe id="video" width="100%" height="100%"
+                src="https://www.youtube.com/embed/UCDn7Itk7Io?controls=0&amp;start=50" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
     </section>
 
@@ -85,11 +84,13 @@
     <section id="contact-form">
         <h1 id="contact-header">Contact</h1>
         <div class="form-container">
+            <span class="error-message"></span>
             <!-- <form id="form" name="contact" action="https://www.freecodecamp.com/email-submit"> -->
-                <form id="form" name="contact" onsubmit="return formValidation()">
+            <form id="form" name="contact" onsubmit="return formValidation()">
                 <input class="form-field" type="text" placeholder="Name" name="name">
                 <input class="form-field" id="email" placeholder="Email" type="email" name="email" required>
-                <textarea id="form-message" class="form-field" type="text" rows="6" placeholder="Message" name="form-message"></textarea>
+                <textarea id="form-message" class="form-field" type="text" rows="6" placeholder="Message"
+                    name="form-message"></textarea>
                 <input class="button" id="submit" type="submit">
             </form>
         </div>
