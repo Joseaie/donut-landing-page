@@ -43,8 +43,8 @@ submitButton.addEventListener("click", function(e) {
     if (formValidation()) {
         formContainer.classList.add("form-closed");
         formSubmitMessage.classList.add("show-thank-you");
-        e.preventDefault();
+        // e.preventDefault();
     } else {
-        e.preventDefault();
+        // e.preventDefault();
     }
 })
