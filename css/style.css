@@ -112,9 +112,12 @@ p, .nav-link, .form-field, .button, .error-message {
     overflow: hidden;
 }
 
-#donut-hero {
-    width: 100%;
-    -webkit-transform: rotate(180deg);
+#hero, #contact-form {
+    background-image: url('../assets/assort-donut.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
 }
 
 #hero-text {
@@ -123,7 +126,7 @@ p, .nav-link, .form-field, .button, .error-message {
     z-index: 2;
     font-size: 130px;
     width: 100%;
-    top: 65%;
+    top: 61%;
     text-align: center;
     transform: translateY(-50%);
 }
@@ -156,11 +159,6 @@ h1, h3 {
     box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.137);
 }
 
-/* .card:hover h3{
-    /* border: 2px solid white; */
-    /* color: rgb(255, 130, 157);
-} */ 
-
 .card:hover {
     transform: scale(1.1);
     transition: ease-in 0.2s;
@@ -185,10 +183,7 @@ h1, h3 {
 }
 
 #contact-form {
-    background-image: url('../assets/assort-donut.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
+    background-position: bottom;
 }
 
 #contact-header {
@@ -286,10 +281,6 @@ footer {
     #plans, #contact-form {
         padding-top: 8vh;
         min-height: 100vh;
-    }
-
-    .card-deck {
-        flex-direction: unset;
     }
 
     .form-field, .button {
