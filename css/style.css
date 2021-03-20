@@ -108,7 +108,7 @@ p, .nav-link, .form-field, .button {
 }
 
 #hero {
-    height: 140vh;
+    height: 70vh;
     overflow: hidden;
 }
 
@@ -264,6 +264,11 @@ footer {
 
     #burger-icon {
         display: none;
+    }
+
+    #hero {
+        height: 140vh;
+        overflow: hidden;
     }
 
     #plans, #contact-form {
