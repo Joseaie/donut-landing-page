@@ -267,7 +267,8 @@ footer {
     }
 
     #plans, #contact-form {
-        min-height: 500px;
+        padding-top: 8vh;
+        min-height: 100vh;
     }
 
     .card-deck {
