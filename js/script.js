@@ -13,9 +13,9 @@ menuItems.forEach(function(menuItem) {
 })
 
 function formValidation() {
-    var messageField = document.forms["contact"]["form-message"].value;
-    const nameField = document.forms["contact"]["name"].value;
-    const emailField = document.forms["contact"]["email"].value;
+    let messageField = document.forms["contact"]["form-message"].value;
+    let nameField = document.forms["contact"]["name"].value;
+    let emailField = document.forms["contact"]["email"].value;
 
     if (messageField == "" && nameField == "" && emailField == "") {
         alert("Please fill the form before submitting");
