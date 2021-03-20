@@ -297,6 +297,11 @@ footer {
     }
 }
 
+@media only screen and (min-width: 750px) {
+     .card-deck {
+        flex-direction: unset;
+    }
+
     #hero-text {
         display: block;
     }
