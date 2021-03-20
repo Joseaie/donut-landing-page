@@ -16,20 +16,22 @@ function formValidation() {
     let messageField = document.forms["contact"]["form-message"].value;
     let nameField = document.forms["contact"]["name"].value;
     let emailField = document.forms["contact"]["email"].value;
+    let errorMessage = document.querySelector(".error-message");
 
     if (messageField == "" && nameField == "" && emailField == "") {
-        alert("Please fill the form before submitting");
+        errorMessage.innerHTML = "Please fill the form before submitting";
         return false;
     } if (nameField == "") {
-        alert("Please enter a name");
+        errorMessage.innerHTML = "Please enter a name";
         return false;
     } if (emailField == "") {
-        alert("Please enter an email address");
+        errorMessage.innerHTML = "Please enter an email address";
         return false;
     } if (messageField == "") {
-        alert("Please enter your message");
+        errorMessage.innerHTML = "Please enter your message";
         return false;
     } 
+    errorMessage.innerHTML = "";
     return true;
 }
 
