@@ -1,0 +1,104 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deuo</title>
+    <link rel="icon" type="png" href="assets/deu-logo.png">
+    <link rel="stylesheet" href="https://use.typekit.net/ujj7elt.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header id="header">
+        <div id="logo-container">
+            <a id="logo">Deu</a>
+            <a href="#"><img id="header-img" src="assets/deu-logo.png" alt="Deu logo."></a>
+        </div>
+        <nav id="nav-bar">
+            <a class="nav-link" href="#hero">Home</a>
+            <a class="nav-link" href="#donut-advert">About</a>
+            <a id="plans-scroll" class="nav-link" href="#plans">Subscribe</a>
+            <a class="nav-link" href="#contact-form">Contact</a>
+        </nav>
+
+        <i class="fa fa-bars" id="burger-icon"></i>
+        <nav class="nav-mobile">
+            <a class="nav-link" href="#hero">Home</a>
+            <a class="nav-link" href="#donut-advert">About</a>
+            <a class="nav-link" href="#plans">Subscribe</a>
+            <a class="nav-link" href="#contact-form">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero">
+        <img id="donut-hero" src="assets/assort-donut.jpg" alt="an assortment of doughnuts.">
+        <a href="#plans"><span>Deuo<br> or<br> Deuo</span></a>
+    </section>
+
+    <!-- About -->
+    <section id="donut-advert">
+        <div>
+        <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/UCDn7Itk7Io?controls=0&amp;start=50"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Subscriptions -->
+    <section id="plans">
+        <h1>I Deuo</h1>
+        <h3>Choose a Deuo box to be delivered to you</h3>
+        <div class="card-deck">
+            <div class="card">
+                <h3>Plan 1</h3>
+                <div class="card-desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ipsa. Labore eius dicta fugiat,
+                        quibusdam quod deserunt laudantium porro omnis praesentium sapiente pariatur ipsam tempora.</p>
+                </div>
+                <button class="button" type="submit">I Dueo</button>
+            </div>
+            <div class="card">
+                <h3>Plan 2</h3>
+                <div class="card-desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ipsa. Labore eius dicta fugiat,
+                        quibusdam quod deserunt laudantium porro omnis praesentium sapiente pariatur ipsam tempora.</p>
+                </div>
+                <button class="button" type="submit">I Deuo</button>
+            </div>
+            <div class="card">
+                <h3>Plan 3</h3>
+                <div class="card-desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ipsa. Labore eius dicta fugiat,
+                        quibusdam quod deserunt laudantium porro omnis praesentium sapiente pariatur ipsam tempora.</p>
+                </div>
+                <button class="button" type="button">I Deuo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact-form">
+        <h1 id="contact-header">Contact</h1>
+        <div class="form-container">
+            <!-- <form id="form" name="contact" action="https://www.freecodecamp.com/email-submit"> -->
+                <form id="form" name="contact" onsubmit="return formValidation()">
+                <input class="form-field" type="text" placeholder="Name" name="name">
+                <input class="form-field" id="email" placeholder="Email" type="email" name="email" required>
+                <textarea id="form-message" class="form-field" type="text" rows="6" placeholder="Message" name="form-message"></textarea>
+                <input class="button" id="submit" type="submit">
+            </form>
+        </div>
+        <p class="thank-you">Thank you!</p>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+<footer>
+    <p>Copyright &copy; 2021</p>
+</footer>
+
+</html>

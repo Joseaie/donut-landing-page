@@ -1,0 +1,286 @@
+/* * {
+    outline: 1px solid red;
+} */
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: lightblue;
+}
+
+#header {
+    background-color: rgba(173, 216, 230, 0.555);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+
+#logo, h1, h3, .button, span, .thank-you {
+    font-family: "giulia",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    height: 90%;
+}
+
+#logo, h1 {
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+#header-img {
+    display: inline-block;
+    overflow: hidden;
+    height: 80%;
+}
+
+#nav-bar {
+    display: none;
+}
+
+#burger-icon {
+    margin-right: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+.nav-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-end;
+    width: 100%;
+    top: -160px;
+    background-color: rgba(173, 216, 230, 0.555);
+}
+
+.menu-closed {
+    top: -160px;
+}
+
+.menu-open {
+    top: 80px;
+    transition: top ease-in 0.1s;
+}
+
+p, .nav-link, .form-field, .button {
+    font-family: "omnes-narrow",sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 1.2;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 0 20px 0 20px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+    color: rgb(255, 130, 157);
+}
+
+#nav-bar {
+    display: none;
+}
+
+#plans, #contact-form {
+    min-height: 400px;
+    margin-top: 20px;
+}
+
+#hero {
+    height: 140vh;
+    overflow: hidden;
+}
+
+#donut-hero {
+    width: 100%;
+    -webkit-transform: rotate(180deg);
+}
+
+span {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    font-size: 130px;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+#donut-advert {
+    width: 100%;
+}
+
+#donut-advert, #plans {
+    scroll-margin-top: 80px;
+}
+
+h1, h3 {
+    text-align: center;
+    margin-left: 0;
+}
+
+.card-deck {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.116);
+    margin: 20px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.137);
+}
+
+/* .card:hover h3{
+    /* border: 2px solid white; */
+    /* color: rgb(255, 130, 157);
+} */ 
+
+.card:hover {
+    transform: scale(1.1);
+    transition: ease-in 0.2s;
+    background-color: rgb(255, 130, 157);
+}
+
+.card-desc {
+    margin: 10px;
+}
+
+.button {
+    padding: 5px 20px;
+    border: none;
+    background-color: lightblue;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.button:hover {
+    border: 2px solid white;
+    transform: scale(1.1);
+}
+
+#contact-form {
+    background-image: url('../assets/assort-donut.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#contact-header {
+    padding-top: 30px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-closed {
+    display: none;
+}
+
+#form {
+    width: 80%;
+    position: relative;
+    max-width: 500px;
+}
+
+.form-field {
+    width: 100%;
+    margin: 8px 0;
+    padding: 5px 0;
+    border: none;
+    text-align: center;
+}
+
+#submit {
+    margin-top: 8px;
+}
+
+#submit:hover {
+    border: none;
+    font-weight: bold;
+    color: rgb(255, 130, 157);
+}
+
+.thank-you {
+    display: none;
+}
+
+.show-thank-you {
+    display: block;
+    text-align: center;
+    margin: 150px;
+    font-size: 60px;
+    
+}
+
+footer {
+    height: 60px;
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (min-width: 650px) {
+    html{
+        font-size: 20px;
+    }
+
+    #nav-bar {
+        display: flex;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    #burger-icon {
+        display: none;
+    }
+
+    #plans, #contact-form {
+        min-height: 500px;
+    }
+
+    .card-deck {
+        flex-direction: unset;
+    }
+
+    .form-field, .button {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    span {
+        display: block;
+    }
+}
