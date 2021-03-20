@@ -77,7 +77,7 @@ body {
     transition: top ease-in 0.1s;
 }
 
-p, .nav-link, .form-field, .button {
+p, .nav-link, .form-field, .button, .error-message {
     font-family: "omnes-narrow",sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -203,6 +203,14 @@ h1, h3 {
     text-align: center;
 }
 
+.error-message {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    /* padding: 7px 15px; */
+    /* background-color: rgba(173, 216, 230, 0.712); */
+}
 .form-closed {
     display: none;
 }
